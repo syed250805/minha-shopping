@@ -324,7 +324,7 @@ main {
     border-radius: 18px;
     padding: 1.25rem 1.5rem;
     display: grid;
-    gap: 0.35rem;
+    gap: 3.5rem;
     box-shadow: 0 12px 40px rgba(0, 0, 0, 0.35);
 }
 
@@ -352,7 +352,6 @@ main {
     border-color: var(--accent);
     box-shadow: 0 0 0 3px rgba(255, 95, 209, 0.18);
 }
-
 
 
 .search-hint {
