@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <title>Minha Shopping | Curated Electronics</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <header class="site-header">
+        <nav class="nav">
+            <div class="brand">Minha Shopping</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <a class="nav-cta" href="#gallery">Shop Now</a>
+        </nav>
+    </header>
+
+    <main id="home">
+        <section class="hero">
+            <div class="hero-copy">
+                <p class="eyebrow">Minha Shopping</p>
+                <h1>Electronics that blend style, utility, and honest pricing</h1>
+                <p class="subtitle">
+                    We curate aesthetic tech essentials that elevate every desk, studio, and living space. Expect trusted
+                    warranties, doorstep delivery, and concierge ordering without logins or carts.
+                </p>
+                <div class="hero-actions">
+                    <a href="#gallery" class="primary-pill">Browse Products</a>
+                    <a href="#about" class="ghost-pill">About Minha</a>
+                </div>
+                <div class="hero-stats">
+                    <div>
+                        <strong>50+</strong>
+                        <span>city deliveries daily</span>
+                    </div>
+                    <div>
+                        <strong>4.9/5</strong>
+                        <span>customer delight score</span>
+                    </div>
+                    <div>
+                        <strong>Instant</strong>
+                        <span>one-click ordering</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="glass-card">
+                    <span>Trusted by 5k+ gadget lovers</span>
+                    <strong>Serving India from Coimbatore</strong>
+                </div>
+                <div class="hero-circle"></div>
+                <div class="hero-orb"></div>
+            </div>
+        </section>
+
+        <section class="gallery" id="gallery">
+            <div class="section-heading">
+                <p class="eyebrow">Center stage</p>
+                <h2>Electronics gadgets curated by Minha Shopping</h2>
+            </div>
+            <div class="product-search">
+                <div class="search-input-wrap">
+                    <input type="search" id="productSearch" name="productSearch" placeholder="Search headphones, speakers, chargers..." aria-label="Search products">
+                    <button type="button" id="clearSearch" aria-label="Clear search">Clear</button>
+                </div>
+                <p class="search-empty" id="searchEmpty" hidden>No products match your search.</p>
+            </div>
+            <div class="card-grid">
+                <article class="product-card" data-name="Spark Mini Speaker" data-price="₹1,499" data-description="Pocket-sized speaker with bold bass and 12-hour playtime." data-image="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=800&q=80" data-features="12-hour battery|Pocket carry loop|IPX5 splash resistant">
+                    <div class="card-media">
+                        <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=800&q=80" alt="Bluetooth speaker">
+                    </div>
+                    <div class="card-body">
+                        <h3>Spark Mini Speaker</h3>
+                        <p class="price">₹1,499</p>
+                        <p class="description">Pocket-sized speaker with bold bass and 12-hour playtime.</p>
+                        <button class="details-btn" type="button">View Details</button>
+                    </div>
+                </article>
+
+                <article class="product-card" data-name="Flux Wireless Earbuds" data-price="₹2,799" data-description="Crystal-clear calls with ENC and splash resistance." data-image="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=800&q=80" data-features="ENC dual mics|Low-latency gaming mode|USB-C fast charge case">
+                    <div class="card-media">
+                        <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=800&q=80" alt="Wireless earbuds">
+                    </div>
+                    <div class="card-body">
+                        <h3>Flux Wireless Earbuds</h3>
+                        <p class="price">₹2,799</p>
+                        <p class="description">Crystal-clear calls with ENC and splash resistance.</p>
+                        <button class="details-btn" type="button">View Details</button>
+                    </div>
+                </article>
+
+                <article class="product-card" data-name="Glide Smart Stylus" data-price="₹899" data-description="Magnetic stylus built for tablets and precision note-taking." data-image="https://images.unsplash.com/photo-1505751172876-fa1923c5c528?auto=format&fit=crop&w=800&q=80" data-features="Palm rejection support|Magnetic snap-on|Universal tip set included">
+                    <div class="card-media">
+                        <img src="https://images.unsplash.com/photo-1505751172876-fa1923c5c528?auto=format&fit=crop&w=800&q=80" alt="Digital stylus">
+                    </div>
+                    <div class="card-body">
+                        <h3>Glide Smart Stylus</h3>
+                        <p class="price">₹899</p>
+                        <p class="description">Magnetic stylus built for tablets and precision note-taking.</p>
+                        <button class="details-btn" type="button">View Details</button>
+                    </div>
+                </article>
+
+                <article class="product-card" data-name="PulseFit Band" data-price="₹2,299" data-description="Heart-rate monitoring plus guided breathing reminders." data-image="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=800&q=80" data-features="24/7 HR tracking|Sleep analytics dashboard|Swim-ready water resistance">
+                    <div class="card-media">
+                        <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=800&q=80" alt="Fitness tracker">
+                    </div>
+                    <div class="card-body">
+                        <h3>PulseFit Band</h3>
+                        <p class="price">₹2,299</p>
+                        <p class="description">Heart-rate monitoring plus guided breathing reminders.</p>
+                        <button class="details-btn" type="button">View Details</button>
+                    </div>
+                </article>
+
+                <article class="product-card" data-name="NovaClip LED Lamp" data-price="₹1,199" data-description="Touch dimming, warm glow, and USB-powered flexibility." data-image="https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&w=800&q=80" data-features="Touch dimmer control|Warm & cool tones|Flexible gooseneck clip">
+                    <div class="card-media">
+                        <img src="https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&w=800&q=80" alt="Desk lamp">
+                    </div>
+                    <div class="card-body">
+                        <h3>NovaClip LED Lamp</h3>
+                        <p class="price">₹1,199</p>
+                        <p class="description">Touch dimming, warm glow, and USB-powered flexibility.</p>
+                        <button class="details-btn" type="button">View Details</button>
+                    </div>
+                </article>
+
+                <article class="product-card" data-name="AeroCharge Power Bank" data-price="₹1,899" data-description="20,000 mAh high-density cells with PD fast charging." data-image="https://images.unsplash.com/photo-1510552776732-01acc9a4c0d3?auto=format&fit=crop&w=800&q=80" data-features="20,000 mAh battery|Dual USB + USB-C ports|LED charge indicator">
+                    <div class="card-media">
+                        <img src="https://images.unsplash.com/photo-1510552776732-01acc9a4c0d3?auto=format&fit=crop&w=800&q=80" alt="Power bank">
+                    </div>
+                    <div class="card-body">
+                        <h3>AeroCharge Power Bank</h3>
+                        <p class="price">₹1,899</p>
+                        <p class="description">20,000 mAh high-density cells with PD fast charging.</p>
+                        <button class="details-btn" type="button">View Details</button>
+                    </div>
+                </article>
+
+                <article class="product-card" data-name="Lumi Bluetooth Keyboard" data-price="₹3,499" data-description="Low-profile typing with tri-device pairing." data-image="https://images.unsplash.com/photo-1516651029879-edd686963a62?auto=format&fit=crop&w=800&q=80" data-features="Tri-device pairing|Backlit keycaps|Aluminum top frame">
+                    <div class="card-media">
+                        <img src="https://images.unsplash.com/photo-1516651029879-edd686963a62?auto=format&fit=crop&w=800&q=80" alt="Keyboard">
+                    </div>
+                    <div class="card-body">
+                        <h3>Lumi Bluetooth Keyboard</h3>
+                        <p class="price">₹3,499</p>
+                        <p class="description">Low-profile typing with tri-device pairing.</p>
+                        <button class="details-btn" type="button">View Details</button>
+                    </div>
+                </article>
+
+                <article class="product-card" data-name="Orbit Pocket Projector" data-price="₹9,499" data-description="Palm-size cinema with auto keystone correction." data-image="https://images.unsplash.com/photo-1466096115517-bceecbfb6fde?auto=format&fit=crop&w=800&q=80" data-features="Auto keystone adjust|Built-in speakers|HDMI & USB inputs">
+                    <div class="card-media">
+                        <img src="https://images.unsplash.com/photo-1466096115517-bceecbfb6fde?auto=format&fit=crop&w=800&q=80" alt="Projector">
+                    </div>
+                    <div class="card-body">
+                        <h3>Orbit Pocket Projector</h3>
+                        <p class="price">₹9,499</p>
+                        <p class="description">Palm-size cinema with auto keystone correction.</p>
+                        <button class="details-btn" type="button">View Details</button>
+                    </div>
+                </article>
+
+                <article class="product-card" data-name="Clarity Webcam Pro" data-price="₹4,299" data-description="1080p streaming webcam with privacy shutter." data-image="https://images.unsplash.com/photo-1580894908361-967195033215?auto=format&fit=crop&w=800&q=80" data-features="1080p glass lens|Dual noise-free mics|Physical privacy shutter">
+                    <div class="card-media">
+                        <img src="https://images.unsplash.com/photo-1580894908361-967195033215?auto=format&fit=crop&w=800&q=80" alt="Webcam">
+                    </div>
+                    <div class="card-body">
+                        <h3>Clarity Webcam Pro</h3>
+                        <p class="price">₹4,299</p>
+                        <p class="description">1080p streaming webcam with privacy shutter.</p>
+                        <button class="details-btn" type="button">View Details</button>
+                    </div>
+                </article>
+
+                <article class="product-card" data-name="Drift Action Camera" data-price="₹7,999" data-description="4K waterproof cam for every biking or trekking plan." data-image="https://images.unsplash.com/photo-1508898578281-774ac4893c0c?auto=format&fit=crop&w=800&q=80" data-features="4K60 recording|Gyro stabilization|Waterproof up to 30m">
+                    <div class="card-media">
+                        <img src="https://images.unsplash.com/photo-1508898578281-774ac4893c0c?auto=format&fit=crop&w=800&q=80" alt="Action camera">
+                    </div>
+                    <div class="card-body">
+                        <h3>Drift Action Camera</h3>
+                        <p class="price">₹7,999</p>
+                        <p class="description">4K waterproof cam for every biking or trekking plan.</p>
+                        <button class="details-btn" type="button">View Details</button>
+                    </div>
+                </article>
+
+                <article class="product-card" data-name="PulseAmp Soundbar" data-price="₹6,499" data-description="Room-filling cinematic audio with Bluetooth 5.0." data-image="https://images.unsplash.com/photo-1511379938547-c1f69419868d?auto=format&fit=crop&w=800&q=80" data-features="120W output|Wireless sub-ready|Bluetooth 5.0 streaming">
+                    <div class="card-media">
+                        <img src="https://images.unsplash.com/photo-1511379938547-c1f69419868d?auto=format&fit=crop&w=800&q=80" alt="Soundbar">
+                    </div>
+                    <div class="card-body">
+                        <h3>PulseAmp Soundbar</h3>
+                        <p class="price">₹6,499</p>
+                        <p class="description">Room-filling cinematic audio with Bluetooth 5.0.</p>
+                        <button class="details-btn" type="button">View Details</button>
+                    </div>
+                </article>
+
+                <article class="product-card" data-name="VibeSmart Home Hub" data-price="₹5,799" data-description="Voice-ready hub to sync lights, ACs, and sensors." data-image="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=800&q=80" data-features="Voice assistant ready|Smart routine engine|Companion app control">
+                    <div class="card-media">
+                        <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=800&q=80" alt="Smart home hub">
+                    </div>
+                    <div class="card-body">
+                        <h3>VibeSmart Home Hub</h3>
+                        <p class="price">₹5,799</p>
+                        <p class="description">Voice-ready hub to sync lights, ACs, and sensors.</p>
+                        <button class="details-btn" type="button">View Details</button>
+                    </div>
+                </article>
+
+                <article class="product-card" data-name="EchoLite Smart Clock" data-price="₹2,099" data-description="Sunrise alarms plus wireless charging pad." data-image="https://images.unsplash.com/photo-1508057198894-247b23fe5ade?auto=format&fit=crop&w=800&q=80" data-features="Sunrise wake alarm|Qi wireless charging|Ambient light sensor">
+                    <div class="card-media">
+                        <img src="https://images.unsplash.com/photo-1508057198894-247b23fe5ade?auto=format&fit=crop&w=800&q=80" alt="Smart clock">
+                    </div>
+                    <div class="card-body">
+                        <h3>EchoLite Smart Clock</h3>
+                        <p class="price">₹2,099</p>
+                        <p class="description">Sunrise alarms plus wireless charging pad.</p>
+                        <button class="details-btn" type="button">View Details</button>
+                    </div>
+                </article>
+
+                <article class="product-card" data-name="BlinkCare Baby Monitor" data-price="₹8,299" data-description="Secure livestream with cry alerts and lullabies." data-image="https://images.unsplash.com/photo-1518444028785-8fbcd101ebb9?auto=format&fit=crop&w=800&q=80" data-features="1080p night vision|Cry and motion alerts|Secure mobile streaming">
+                    <div class="card-media">
+                        <img src="https://images.unsplash.com/photo-1518444028785-8fbcd101ebb9?auto=format&fit=crop&w=800&q=80" alt="Baby monitor">
+                    </div>
+                    <div class="card-body">
+                        <h3>BlinkCare Baby Monitor</h3>
+                        <p class="price">₹8,299</p>
+                        <p class="description">Secure livestream with cry alerts and lullabies.</p>
+                        <button class="details-btn" type="button">View Details</button>
+                    </div>
+                </article>
+
+                <article class="product-card" data-name="AeroSync Charging Mat" data-price="₹1,499" data-description="Charge phone, buds, and watch in one aesthetic slab." data-image="https://images.unsplash.com/photo-1517430816045-df4b7de11d1d?auto=format&fit=crop&w=800&q=80" data-features="3-in-1 charging zones|Foreign object detection|Soft ambient LED">
+                    <div class="card-media">
+                        <img src="https://images.unsplash.com/photo-1517430816045-df4b7de11d1d?auto=format&fit=crop&w=800&q=80" alt="Charging mat">
+                    </div>
+                    <div class="card-body">
+                        <h3>AeroSync Charging Mat</h3>
+                        <p class="price">₹1,499</p>
+                        <p class="description">Charge phone, buds, and watch in one aesthetic slab.</p>
+                        <button class="details-btn" type="button">View Details</button>
+                    </div>
+                </article>
+
+                <article class="product-card" data-name="LumiTrack GPS Tag" data-price="₹999" data-description="Ultra-slim tracker with global Bluetooth mesh network." data-image="https://images.unsplash.com/photo-1508057198997-955f9a74f16c?auto=format&fit=crop&w=800&q=80" data-features="Global mesh tracking|Replaceable battery|Precision alert mode">
+                    <div class="card-media">
+                        <img src="https://images.unsplash.com/photo-1508057198997-955f9a74f16c?auto=format&fit=crop&w=800&q=80" alt="GPS tag">
+                    </div>
+                    <div class="card-body">
+                        <h3>LumiTrack GPS Tag</h3>
+                        <p class="price">₹999</p>
+                        <p class="description">Ultra-slim tracker with global Bluetooth mesh network.</p>
+                        <button class="details-btn" type="button">View Details</button>
+                    </div>
+                </article>
+
+                <article class="product-card" data-name="PixelNote Smart Notebook" data-price="₹3,099" data-description="Reusable notebook that syncs to the cloud in seconds." data-image="https://images.unsplash.com/photo-1473186578172-c141e6798cf4?auto=format&fit=crop&w=800&q=80" data-features="Reusable smart pages|Cloud sync app|Pilot FriXion pen included">
+                    <div class="card-media">
+                        <img src="https://images.unsplash.com/photo-1473186578172-c141e6798cf4?auto=format&fit=crop&w=800&q=80" alt="Smart notebook">
+                    </div>
+                    <div class="card-body">
+                        <h3>PixelNote Smart Notebook</h3>
+                        <p class="price">₹3,099</p>
+                        <p class="description">Reusable notebook that syncs to the cloud in seconds.</p>
+                        <button class="details-btn" type="button">View Details</button>
+                    </div>
+                </article>
+
+                <article class="product-card" data-name="ChillMist USB Humidifier" data-price="₹1,299" data-description="Silent hydration for desks with ambient neon glow." data-image="https://images.unsplash.com/photo-1503602642458-232111445657?auto=format&fit=crop&w=800&q=80" data-features="Color-cycle glow|Auto shut-off safety|Ultra-quiet misting">
+                    <div class="card-media">
+                        <img src="https://images.unsplash.com/photo-1503602642458-232111445657?auto=format&fit=crop&w=800&q=80" alt="Humidifier">
+                    </div>
+                    <div class="card-body">
+                        <h3>ChillMist USB Humidifier</h3>
+                        <p class="price">₹1,299</p>
+                        <p class="description">Silent hydration for desks with ambient neon glow.</p>
+                        <button class="details-btn" type="button">View Details</button>
+                    </div>
+                </article>
+
+                <article class="product-card" data-name="VueLink HDMI Switch" data-price="₹2,699" data-description="One-button toggling between consoles, cameras, and laptops." data-image="https://images.unsplash.com/photo-1517059224940-d4af9eec41e5?auto=format&fit=crop&w=800&q=80" data-features="4K HDR passthrough|Single-tap toggle|Wireless remote included">
+                    <div class="card-media">
+                        <img src="https://images.unsplash.com/photo-1517059224940-d4af9eec41e5?auto=format&fit=crop&w=800&q=80" alt="HDMI switch">
+                    </div>
+                    <div class="card-body">
+                        <h3>VueLink HDMI Switch</h3>
+                        <p class="price">₹2,699</p>
+                        <p class="description">One-button toggling between consoles, cameras, and laptops.</p>
+                        <button class="details-btn" type="button">View Details</button>
+                    </div>
+                </article>
+
+                <article class="product-card" data-name="AeroLite Desk Fan" data-price="₹2,249" data-description="Brushless fan with 90° tilt and whisper-quiet cooling." data-image="https://images.unsplash.com/photo-1448932223592-d1fc686e76ea?auto=format&fit=crop&w=800&q=80" data-features="Brushless motor|3-speed dial|USB-C powered base">
+                    <div class="card-media">
+                        <img src="https://images.unsplash.com/photo-1448932223592-d1fc686e76ea?auto=format&fit=crop&w=800&q=80" alt="Desk fan">
+                    </div>
+                    <div class="card-body">
+                        <h3>AeroLite Desk Fan</h3>
+                        <p class="price">₹2,249</p>
+                        <p class="description">Brushless fan with 90° tilt and whisper-quiet cooling.</p>
+                        <button class="details-btn" type="button">View Details</button>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="about" id="about">
+            <div class="section-heading">
+                <p class="eyebrow">Crafted in Coimbatore</p>
+                <h2>Modern retail that still feels personal</h2>
+            </div>
+            <p>
+                Minha Shopping is a hometown electronics studio focused on clean experiences and delightful support. We
+                handpick every gadget between ₹250 and ₹10,000, test it for durability, and pair it with real humans who answer
+                queries instantly. Our design team ensures your unboxing is as beautiful as the product itself, while our
+                logistics partners keep deliveries swift across South India. From selecting artisan-friendly packaging to
+                building conversational buying journeys, our goal is to blend warmth, modern aesthetics, and uncompromised
+                utility for every shopper.
+            </p>
+        </section>
+
+        <section class="contact" id="contact">
+            <div class="section-heading">
+                <p class="eyebrow">Talk to us</p>
+                <h2>Contact Minha Shopping</h2>
+            </div>
+            <div class="contact-grid">
+                <div>
+                    <h3>Phone</h3>
+                    <p>0422 477 3492</p>
+                    <p>83002 99492</p>
+                    <p>98940 86409</p>
+                </div>
+                <div>
+                    <h3>Email</h3>
+                    <p><a href="mailto:minhashoppingcbe@gmail.com">minhashoppingcbe@gmail.com</a></p>
+                </div>
+                <div>
+                    <h3>Storefront</h3>
+                    <p>226/1 GM Nagar, Bypass Road</p>
+                    <p>South Ukkadam, Coimbatore 641001</p>
+                    <p>Tamil Nadu, India</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+        <p>
+            <button class="link-pill" data-info="terms">Terms &amp; Conditions</button>
+            &nbsp;|&nbsp;
+            <button class="link-pill" data-info="returns">Return / Refund Policy</button>
+            &nbsp;|&nbsp;
+            <button class="link-pill" data-info="address">Address</button>
+        </p>
+    </footer>
+
+
+    <div class="product-overlay" id="productModal" aria-hidden="true">
+        <div class="product-detail-card">
+            <button class="close-btn" id="closeProduct" aria-label="Close product details">&times;</button>
+            <div class="product-detail-grid">
+                <div class="detail-media">
+                    <img id="detailImage" src="" alt="Selected product">
+                </div>
+                <div class="detail-info">
+                    <p class="eyebrow">Minha pick</p>
+                    <h3 id="detailTitle"></h3>
+                    <p class="price" id="detailPrice"></p>
+                    <p class="detail-description" id="detailDescription"></p>
+                    <ul class="detail-features" id="detailFeatures"></ul>
+                    <div class="detail-actions">
+                        <button class="ghost-pill" type="button" id="detailClose">Keep Browsing</button>
+                        <button class="primary-pill" type="button" id="detailOrder">Order Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="info-overlay" id="infoModal" aria-hidden="true">
+        <div class="info-card">
+            <button class="close-btn" id="closeInfo" aria-label="Close policy details">&times;</button>
+            <div class="info-content">
+                <p class="eyebrow" id="infoLabel"></p>
+                <h3 id="infoTitle"></h3>
+                <ol id="infoList" class="info-list"></ol>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="script.js" defer></script>
+</body>
+
+</html>
+
