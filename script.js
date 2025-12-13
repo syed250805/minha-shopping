@@ -99,7 +99,7 @@ const toggleInfoModal = (key = null) => {
 
 // WhatsApp redirect function
 const redirectToWhatsApp = (productName) => {
-    const phone = "919894086409"; // WhatsApp number: +91 9384589894
+    const phone = "918300299492"; // WhatsApp number: +91 9384589894
     const message = `Hello, I would like to order: ${productName}`;
     const url = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
     window.open(url, "_blank");
