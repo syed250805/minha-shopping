@@ -366,6 +366,44 @@ main {
     font-weight: 600;
 }
 
+.sync-status {
+    color: var(--muted);
+    font-size: 0.92rem;
+    margin-top: 0.8rem;
+}
+
+.loading-state,
+.error-state {
+    color: var(--muted);
+    text-align: center;
+    padding: 3rem 0;
+    font-size: 1rem;
+}
+
+.loading-state,
+.error-state {
+    padding: 2rem;
+    text-align: center;
+    color: var(--muted);
+    border: 1px dashed var(--border);
+    border-radius: 18px;
+    background: rgba(255, 255, 255, 0.03);
+}
+
+.error-state {
+    color: var(--error);
+}
+
+#categoryFilter {
+    border-radius: 14px;
+    border: 1px solid var(--border);
+    background: rgba(255, 255, 255, 0.04);
+    color: var(--text);
+    padding: 0.85rem 1rem;
+    font-size: 1rem;
+    font-family: inherit;
+}
+
 .card-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
